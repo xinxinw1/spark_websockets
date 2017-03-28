@@ -601,7 +601,7 @@ void WebSocketClient::readLine(char* buffer) {
 	buffer[i] = 0x0;
 }
 
-bool WebSocketClient::send (char* message) {
+bool WebSocketClient::send (const char* message) {
   if(!_canConnect || _reconnecting) {
     return false;
   }

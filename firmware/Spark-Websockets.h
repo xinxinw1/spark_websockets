@@ -55,7 +55,7 @@ public:
   void onClose(OnClose function);
   void onMessage(OnMessage function);
   void onError(OnError function);
-  bool send(char* message);
+  bool send(const char* message);
 private:
 String WebSocketClientStringTable = {
 			"GET / HTTP/1.1\x0d\x0a"
